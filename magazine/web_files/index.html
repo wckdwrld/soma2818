@@ -2,8 +2,34 @@
 
 <html>
 				<head>
+				<script type="text/javascript">
+						<!--
+								var _link = document.createElement('link');
+								var _currStyle = 0;
+								_link.type = 'text/css';
+								_link.href = "css/style1.css";
+								_link.rel = "stylesheet";
+								console.log("Javascript init");
+
+								function changeStyle(){
+										console.log("changeStyle init");
+										console.log(_link.href);
+										var _head = document.getElementsByTagName('head')[0];
+										if (_currStyle == 0) {
+														_link.href = "css/style2.css";
+														_currStyle = 1;
+										}
+										else {
+														_link.href = "css/style1.css";
+														_currStyle = 0;
+										}
+										_head.appendChild(_link);
+								}
+								//-->
+				</script>
 								<link rel="stylesheet" type="text/css" href="css/style1.css">
 				</head>
+
 
 				<body>
 								<nav>
@@ -30,6 +56,11 @@
 								</nav>
 
 								<div class="control-menu">
+										<span class="toggle-switch" onclick="changeStyle()"> Change Style </span>
+								</div>
+
+								<div class="article-container">
+							 
 								</div>
 				</body>
 </html>
