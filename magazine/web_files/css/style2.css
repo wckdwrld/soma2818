@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-body {
-  transition: 0.5s;
-  background-color: #181818; }
-
 nav {
   margin-top: 5vh;
   z-index: 1; }
@@ -11,7 +7,7 @@ nav {
     position: absolute;
     z-index: 1;
     color: black;
-    font-size: 32pt;
+    font-size: 24pt;
     font-family: 'Roboto Slab', serif;
     font-style: bold;
     margin-left: 12vw;
@@ -27,7 +23,6 @@ nav {
     nav .nav-items li {
       display: inline-block; }
     nav .nav-items .nav-link {
-      color: white;
       display: inline-block;
       font-family: 'Roboto', sans-serif;
       font-style: light;
@@ -39,20 +34,21 @@ nav {
 
 .control-menu {
   transition: 0.5s;
+  transition-delay: 0.5s;
   z-index: 0;
   position: absolute;
   top: 0px;
-  left: 5vw;
-  background-color: #F5F7F9;
+  left: 0vw;
   height: 100vh;
-  width: 25vw; }
+  width: 100vw; }
 
 .toggle-switch {
+  color: #181818;
   cursor: pointer;
   background-color: white;
   border: none;
   z-index: 1;
   width: 10vw;
-  height: 5vw; }
+  height: 2vw; }
 
 /*# sourceMappingURL=style2.css.map */
