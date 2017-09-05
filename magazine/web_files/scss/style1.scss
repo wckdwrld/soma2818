@@ -77,6 +77,8 @@ nav {
 }
 
 .article-container {
+				transition: 0.5s;
+				transition-delay: 1s;
 				color: #181818;
 				width: 30vw;
 				text-align: right;
@@ -90,5 +92,27 @@ nav {
 	.article {
 					margin-top: 20vh;
 	}
+	.article-img {
+					height: 30vh;
+					width: 20vw;
+					display: inline-block;
+					position: absolute;
+					margin-left: 5vw;
+					margin-top: -18vh;
+	}
 }
 
+.page-footer {
+				margin-left: 50%;
+				margin-top: 90vh;
+				float: right;
+			 	position: absolute;	
+				font-family: 'Roboto', sans-serif;
+				color: #181818;
+			li {
+						transition: 0.5s;
+						transition-delay: 0.5s;
+						color: #DCDEE0;
+						display: inline-block;
+		}
+	}	
